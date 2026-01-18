@@ -1,1 +1,120 @@
 <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator UMKM</title>
+  <meta name="description" content="Bantu hitung harga jual usaha kecil secara praktis." />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111111;
+      --card:#f3f4f6;
+      --accent:#f97316;
+    }
+    [data-theme="dark"]{
+      --bg:#020617;
+      --fg:#e5e7eb;
+      --card:#020617;
+      --accent:#fb923c;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.6;
+    }
+    header{
+      padding:48px 16px;
+      background:linear-gradient(135deg,var(--accent),#22c55e);
+      color:#fff;
+      text-align:center;
+    }
+    header h1{margin:0 0 8px;font-size:2.2rem}
+    header p{margin:0;opacity:.95}
+    main{max-width:960px;margin:auto;padding:24px 16px}
+    .card{
+      background:var(--card);
+      border-radius:14px;
+      padding:20px;
+      margin-bottom:20px;
+    }
+    h2{margin-top:0}
+    ul{padding-left:20px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    button{
+      border:none;
+      border-radius:8px;
+      padding:10px 14px;
+      font-size:14px;
+      cursor:pointer;
+    }
+    .primary{background:var(--accent);color:white}
+    .ghost{background:transparent;color:var(--fg);border:1px solid rgba(0,0,0,.15)}
+    footer{
+      text-align:center;
+      padding:24px 16px;
+      font-size:14px;
+      opacity:.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kalkulator UMKM</h1>
+    <p>Bantu hitung harga jual usaha kecil secara praktis.</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Tentang Aplikasi</h2>
+      <p>
+        Kalkulator UMKM adalah aplikasi sederhana yang dirancang untuk membantu pelaku usaha kecil dan menengah dalam melakukan perhitungan harga jual secara lebih terstruktur dan mudah dipahami.
+      </p>
+      <p>
+        Aplikasi ini memungkinkan pengguna menghitung harga jual berdasarkan biaya produksi dan target keuntungan yang diinginkan. Dengan tampilan yang sederhana dan fokus pada kebutuhan dasar usaha, aplikasi ini cocok digunakan oleh pelaku UMKM dari berbagai jenis usaha, seperti makanan, minuman, laundry, hingga penjualan online.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Fitur Utama</h2>
+      <ul>
+        <li>Perhitungan harga jual berdasarkan biaya dan target keuntungan</li>
+        <li>Tampilan hasil dalam format Rupiah yang mudah dibaca</li>
+        <li>Analisis harga sederhana untuk membantu memahami margin</li>
+        <li>Riwayat perhitungan yang tersimpan secara lokal di perangkat</li>
+        <li>Catatan keterangan untuk setiap perhitungan</li>
+        <li>Tips usaha untuk berbagai jenis usaha UMKM</li>
+        <li>Mode tema terang, gelap, dan mengikuti sistem</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Catatan Penggunaan</h2>
+      <p>
+        Semua data perhitungan disimpan secara lokal di perangkat pengguna dan tidak dikirim ke server mana pun. Aplikasi ini bersifat sebagai alat bantu perhitungan dan edukasi, sehingga hasil yang ditampilkan merupakan perkiraan dan dapat disesuaikan dengan kondisi usaha masing-masing.
+      </p>
+      <p>
+        Kalkulator UMKM dirancang agar ringan, mudah digunakan, dan dapat diakses kapan saja tanpa koneksi internet.
+      </p>
+    </div>
+
+    <div class="actions">
+      <a class="ghost" href="/p/privacy-policy.html">Kebijakan Privasi</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Kalkulator UMKM
+  </footer>
+
+  <script>
+    function toggleTheme(){
+      const html=document.documentElement;
+      html.dataset.theme=html.dataset.theme==='dark'?'light':'dark';
+    }
+  </script>
+</body>
+</html>
